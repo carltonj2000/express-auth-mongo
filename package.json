@@ -4,8 +4,9 @@
   "description": "The code in this repository is based on [Node Auth Tutorial (JWT)](https://youtu.be/SnoAwLP1a-0) video.",
   "main": "node.js",
   "scripts": {
-    "livereload": "livereload \"views, public\" -e 'ejs,css' -x node_modules -w 250 -d ",
-    "dev": "nodemon server"
+    "dev": "nodemon server --ignore css --ignore node_modules --ignore public",
+    "livereload": "livereload \"views, public\" -e 'ejs,css' -x node_modules -w 100 -d ",
+    "css": "postcss css/style.css -v -o public/style.css -w"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +17,10 @@
     "mongoose": "^5.10.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "livereload": "^0.9.1",
     "nodemon": "^2.0.4",
+    "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.6.2"
   }
 }

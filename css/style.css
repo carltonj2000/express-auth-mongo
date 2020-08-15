@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+.nav {
+  @apply flex justify-between p-2 bg-indigo-400 text-indigo-100 p-3;
+}
+
+.btn {
+  @apply bg-indigo-500 p-2 rounded-lg;
+}
+
+.btn:hover {
+  @apply bg-indigo-600;
+}
+
+@tailwind utilities;
