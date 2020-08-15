@@ -3,6 +3,10 @@ const express = require("express");
 
 const app = express();
 
+app.vars = {
+  name: "Apps For Tracking",
+};
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -13,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/index", (req, res) => {
-  res.render("pages/index");
+  res.render("pages/index", app.vars);
 });
 
 module.exports = app;

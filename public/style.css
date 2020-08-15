@@ -637,12 +637,26 @@ video {
   background-color: rgba(102, 126, 234, var(--bg-opacity));
   padding: 0.5rem;
   border-radius: 0.5rem;
+  --text-opacity: 1;
+  color: #ebf4ff;
+  color: rgba(235, 244, 255, var(--text-opacity));
 }
 
 .btn:hover {
   --bg-opacity: 1;
   background-color: #5a67d8;
   background-color: rgba(90, 103, 216, var(--bg-opacity));
+}
+
+.footer {
+  --bg-opacity: 1;
+  background-color: #7f9cf5;
+  background-color: rgba(127, 156, 245, var(--bg-opacity));
+  text-align: center;
+}
+
+img {
+  transform: scale(-1, 1);
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

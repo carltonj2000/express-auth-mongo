@@ -6,11 +6,20 @@
 }
 
 .btn {
-  @apply bg-indigo-500 p-2 rounded-lg;
+  @apply bg-indigo-500 p-2 rounded-lg text-indigo-100;
 }
 
 .btn:hover {
   @apply bg-indigo-600;
+}
+
+.footer {
+  @apply bg-indigo-400;
+  text-align: center;
+}
+
+img {
+  transform: scale(-1, 1);
 }
 
 @tailwind utilities;

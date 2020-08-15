@@ -1,20 +1,11 @@
 <!-- views/pages/index.ejs -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <%- include('../partials/head') %>
-  </head>
-  <body>
-    <header>
-      <%- include('../partials/header') %>
-    </header>
-    <main>
-      <h1>Content Title</h1>
-      <p>Content here. Rev a.</p>
-    </main>
-    <footer>
-      <%- include('../partials/footer') %>
-    </footer>
-    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
-  </body>
-</html>
+<%- include('../partials/header') %>
+<main class="grid grid-cols-5">
+  <img src="/static/img/run.svg" alt="run" class="col-span-2" />
+  <div class="mx-4 col-span-3 flex flex-col justify-center">
+    <h1 class="text-xl font-bold mb-4">Track Your Activities</h1>
+    <p class="mb-4">Result for result oriented people.</p>
+    <div><span class="btn">View Your Activities</span></div>
+  </div>
+</main>
+<%- include('../partials/footer') %>
